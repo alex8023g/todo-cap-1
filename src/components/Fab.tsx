@@ -9,12 +9,12 @@ export default function Example({ setIsAddTask }: Props) {
     <button
       id='btn1'
       type='button'
-      className='fixed bottom-5 right-5 drop-shadow-xl rounded-2xl bg-cyan-600 p-5 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+      className='absolute bottom-3 left-1/2 -translate-x-1/2 drop-shadow-xl rounded-full bg-cyan-600 p-5 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
       onClick={() => {
         setIsAddTask(true);
       }}
     >
-      <PlusIcon className='h-7 w-7' aria-hidden='true' />
+      <PlusIcon className='h-6 w-6' aria-hidden='true' />
     </button>
   );
 }
